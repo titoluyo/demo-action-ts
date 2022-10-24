@@ -9,6 +9,9 @@ async function run(): Promise<void> {
     console.log(`(console) Hello ${nameToGreet}!`)
     const ms: string = core.getInput('milliseconds')
     core.debug(`Waiting ${ms} milliseconds ...`) // debug is only output if you set the secret `ACTIONS_STEP_DEBUG` to true
+    core.info('This is an info message')
+    core.notice('This is a notice')
+    core.warning('This is a warning')
 
     core.debug(new Date().toTimeString())
     await wait(parseInt(ms, 10))
