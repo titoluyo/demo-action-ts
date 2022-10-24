@@ -1,5 +1,5 @@
 {
-  "name": "typescript-action",
+  "name": "demo-action-ts",
   "version": "0.0.0",
   "private": true,
   "description": "TypeScript action",
